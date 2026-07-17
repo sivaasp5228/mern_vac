@@ -63,6 +63,7 @@ var Login = ({ setIsLoggedIn, isLoggedIn }) => {
         <p className="demo">
             welcome to Login Page
         </p>
+        <p>Dont have a login ! <span><a href="/signup">Sign up</a></span></p>
       </form>
     </div>
   );

@@ -11,6 +11,7 @@ import UseEffect from './components/useEffect.jsx'
 import UseEffectAPI from './components/UseEffectAPI.jsx'
 import UseRef from './components/UseRef.jsx'
 import UseMemo from './components/UseMemo.jsx'
+import SignUp from './components/SignUp.jsx'
 import { BrowserRouter, Navigate, Routes, Route } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 
@@ -60,6 +61,10 @@ var App = () => {
         <Route
           path="/use-memo"
           element={isLoggedIn ? <UseMemo /> : <Navigate to="/login" replace />}
+        />
+        <Route
+          path="/signup"
+          element={<SignUp />}
         />
         <Route
           path="/login"
