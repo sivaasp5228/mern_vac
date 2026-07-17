@@ -61,6 +61,8 @@ var Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
                     <li><a href="/use-state" className="dropdown-link">useState hooks</a></li>
                     <li><a href="/use-effect" className="dropdown-link">useEffect hooks</a></li>
                     <li><a href="/use-effect-api" className="dropdown-link">useEffect API</a></li>
+                    <li><a href="/use-ref" className="dropdown-link">useRef</a></li>
+                    <li><a href="/use-memo" className="dropdown-link">useMemo</a></li>
                 </ul>
             )}
             </div>

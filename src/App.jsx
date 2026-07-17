@@ -9,6 +9,8 @@ import Order from './components/Order.jsx'
 import StateComp from './components/StateComp.jsx'
 import UseEffect from './components/useEffect.jsx'
 import UseEffectAPI from './components/UseEffectAPI.jsx'
+import UseRef from './components/UseRef.jsx'
+import UseMemo from './components/UseMemo.jsx'
 import { BrowserRouter, Navigate, Routes, Route } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 
@@ -50,6 +52,14 @@ var App = () => {
         <Route
           path="/use-effect-api"
           element={isLoggedIn ? <UseEffectAPI /> : <Navigate to="/login" replace />}
+        />
+        <Route
+          path="/use-ref"
+          element={isLoggedIn ? <UseRef /> : <Navigate to="/login" replace />}
+        />
+        <Route
+          path="/use-memo"
+          element={isLoggedIn ? <UseMemo /> : <Navigate to="/login" replace />}
         />
         <Route
           path="/login"
