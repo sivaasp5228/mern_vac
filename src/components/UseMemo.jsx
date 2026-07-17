@@ -16,12 +16,14 @@ var UseMemo = () => {
         color: theme ? "white" : "black"
     }
     return (
-        <div style={styling}>
+        <div>
             <button onClick={() => setTheme(!theme)}>Toggle Theme</button>
             <h1>This is UseMemo</h1>
             <input type="number" value={number} onChange={(e) => setNumber(e.target.value)} />
+            <div style={styling}>
             <h2>Number is : {number}</h2>
             <h2>DoubleUp Number is : {doubleUpANumber}</h2>
+            </div>
         </div>
     )
 };
